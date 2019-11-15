@@ -193,7 +193,7 @@ footer {
 
 .project-block {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
 }
 
@@ -206,7 +206,7 @@ footer ul {
   max-width: 400px;
   display: flex;
 
-  margin: 20px auto;
+  margin: 40px auto;
   flex-direction: row;
   justify-content: space-between;
 }
