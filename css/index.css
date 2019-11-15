@@ -135,8 +135,8 @@ html {
   font-size: 62.5%;
 }
 
-header {
-}
+/* header {
+} */
 .header-container {
   display: flex;
   flex-direction: column;
