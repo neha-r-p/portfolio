@@ -1,7 +1,11 @@
+// Variables / Mixins
+@import 'vars';
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
+
 html,
 body,
 div,
@@ -90,7 +94,6 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -105,40 +108,33 @@ nav,
 section {
   display: block;
 }
-
 body {
   line-height: 1;
 }
-
 ol,
 ul {
   list-style: none;
 }
-
 blockquote,
 q {
   quotes: none;
 }
-
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 * {
   box-sizing: border-box;
 }
-
 html {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 62.5%;
 }
 
@@ -149,23 +145,21 @@ footer {
   display: flex;
   flex-direction: column;
   background-color: #8d5893;
+  img {
+    height: 400px;
+    width: auto;
+  }
 }
-.header-container img,
-footer img {
-  height: 400px;
-  width: auto;
-}
-
 .header-text {
   margin: 40px auto;
   color: white;
   text-align: center;
-}
-.header-text h1 {
-  font-size: 6rem;
-}
-.header-text h3 {
-  font-size: 2rem;
+  h1 {
+    font-size: 6rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
 }
 
 .about-me {
@@ -188,46 +182,49 @@ footer img {
 .projects {
   padding: 20px 0;
   font-size: 1.8rem;
-}
-.projects h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 2.8rem;
-}
-.projects .project-block {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.projects .project-block .project {
-  display: flex;
-  flex-direction: row;
-}
-.projects .project-block .project h3 {
-  margin: 10px 0;
-  font-size: 2.4rem;
-}
-.projects .project-block .project img {
-  height: 400px;
-  width: 600px;
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.8rem;
+  }
+
+  .project-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .project {
+        display: flex;
+        flex-direction: row;
+      h3 {
+        margin: 10px 0;
+        font-size: 2.4rem;
+      }
+      img {
+        height: 400px;
+        width: 600px;
+      }
+    }
+  }
 }
 
-footer ul {
-  max-width: 400px;
-  display: flex;
-  margin: 40px auto;
-  flex-direction: row;
-  justify-content: space-between;
-}
-footer a {
-  text-decoration: none;
-  color: black;
-  margin: 10px;
-}
-footer p {
-  text-align: center;
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
+footer {
+  ul {
+    max-width: 400px;
+    display: flex;
 
-/*# sourceMappingURL=index.css.map */
+    margin: 40px auto;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+  }
+  p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+}
