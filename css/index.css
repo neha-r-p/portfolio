@@ -141,6 +141,11 @@ html {
   font-family: "Poppins", sans-serif;
   font-size: 62.5%;
 }
+html h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.8rem;
+}
 
 /* header {
 } */
@@ -175,6 +180,14 @@ footer img {
   flex-direction: row;
   justify-content: space-around;
 }
+.about-me p {
+  width: 80%;
+  margin: 0 auto;
+}
+.about-me img {
+  max-width: 500px;
+  height: auto;
+}
 
 .skillset {
   padding: 20px 0;
@@ -188,11 +201,6 @@ footer img {
 .projects {
   padding: 20px 0;
   font-size: 1.8rem;
-}
-.projects h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 2.8rem;
 }
 .projects .project-block {
   display: flex;
