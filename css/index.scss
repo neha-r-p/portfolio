@@ -1,6 +1,10 @@
 // Variables / Mixins
 @import 'vars';
 
+//fonts
+@import './fontawesome/fontawesome.scss';
+@import './fontawesome/solid.scss';
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -195,6 +199,11 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+
+  .tech-icons{
+      font-size: 7rem;
+      margin: 2rem
+  }
 }
 
 .projects {
