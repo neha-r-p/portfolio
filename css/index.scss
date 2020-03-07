@@ -157,6 +157,10 @@ footer {
   img {
     height: 400px;
     width: auto;
+    @media (max-width: $mobile) {
+      height: 200px;
+      width: auto;
+    }
   }
 }
 .header-text {
@@ -181,8 +185,8 @@ footer {
   justify-content: space-around;
   align-items: center;
 
-  @media (max-width: $mobile){
-      flex-direction: column;
+  @media (max-width: $mobile) {
+    flex-direction: column;
   }
 
   p {
@@ -195,9 +199,9 @@ footer {
     height: auto;
     border-radius: 50%;
 
-    @media (max-width: $mobile){
-        max-width: 300px;
-        margin: 20px 0;
+    @media (max-width: $mobile) {
+      max-width: 300px;
+      margin: 20px 0;
     }
   }
 }
@@ -208,11 +212,39 @@ footer {
   font-size: 1.8rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
 
-  .tech-icons{
-      font-size: 7rem;
-      margin: 2rem
+  .tech-icons {
+    width: 60%;
+    font-size: 7rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    i {
+      margin: 0 1rem;
+    }
+    @media (max-width: $mobile) {
+      display: none;
+    }
+  }
+
+  .skill-list {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    ul {
+      margin: 0 auto;
+      list-style-type: circle;
+      list-style-position: inside;
+    }
+    @media (max-width: $mobile) {
+      width: 90%;
+      margin: 0 auto;
+    }
   }
 }
 
