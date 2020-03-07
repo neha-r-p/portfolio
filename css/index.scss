@@ -179,6 +179,11 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
+
+  @media (max-width: $mobile){
+      flex-direction: column;
+  }
 
   p {
     width: 80%;
@@ -186,9 +191,14 @@ footer {
   }
 
   img {
-    max-width: 500px;
+    max-width: 400px;
     height: auto;
     border-radius: 50%;
+
+    @media (max-width: $mobile){
+        max-width: 300px;
+        margin: 20px 0;
+    }
   }
 }
 
