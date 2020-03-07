@@ -6037,6 +6037,13 @@ footer img {
   height: 400px;
   width: auto;
 }
+@media (max-width: 600px) {
+  .header-container img,
+footer img {
+    height: 200px;
+    width: auto;
+  }
+}
 
 .header-text {
   margin: 40px auto;
@@ -6087,11 +6094,42 @@ footer img {
   font-size: 1.8rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 .skillset .tech-icons {
+  width: 60%;
   font-size: 7rem;
   margin: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.skillset .tech-icons i {
+  margin: 0 1rem;
+}
+@media (max-width: 600px) {
+  .skillset .tech-icons {
+    display: none;
+  }
+}
+.skillset .skill-list {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.skillset .skill-list ul {
+  margin: 0 auto;
+  list-style-type: circle;
+  list-style-position: inside;
+}
+@media (max-width: 600px) {
+  .skillset .skill-list {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .projects {
