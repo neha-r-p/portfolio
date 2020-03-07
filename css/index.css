@@ -6147,7 +6147,7 @@ footer img {
 .projects .project-block .project {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin: 2rem 0;
 }
 .projects .project-block .project h3 {
@@ -6157,6 +6157,16 @@ footer img {
 .projects .project-block .project img {
   max-width: 49%;
   height: auto;
+}
+.projects .project-block .project .project-description {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projects .project-block .project .project-description p {
+  width: 85%;
+  margin: 2rem;
 }
 @media (max-width: 800px) {
   .projects .project-block .project {
