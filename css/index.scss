@@ -185,7 +185,7 @@ footer {
   justify-content: space-around;
   align-items: center;
 
-  @media (max-width: $mobile) {
+  @media (max-width: $tablet) {
     flex-direction: column;
   }
 
@@ -199,7 +199,7 @@ footer {
     height: auto;
     border-radius: 50%;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
       max-width: 300px;
       margin: 20px 0;
     }
@@ -272,6 +272,11 @@ footer {
       img {
         max-width: 49%;
         height: auto;
+      }
+
+      @media (max-width: $tablet){
+          flex-direction: column-reverse;
+          align-items: center;
       }
     }
   }
