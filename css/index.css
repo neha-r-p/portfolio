@@ -6067,7 +6067,7 @@ footer img {
   justify-content: space-around;
   align-items: center;
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .about-me {
     flex-direction: column;
   }
@@ -6081,7 +6081,7 @@ footer img {
   height: auto;
   border-radius: 50%;
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .about-me img {
     max-width: 300px;
     margin: 20px 0;
@@ -6157,6 +6157,12 @@ footer img {
 .projects .project-block .project img {
   max-width: 49%;
   height: auto;
+}
+@media (max-width: 800px) {
+  .projects .project-block .project {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
 
 footer ul {
