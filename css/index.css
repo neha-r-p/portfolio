@@ -6150,6 +6150,11 @@ footer img {
   justify-content: space-between;
   margin: 2rem 0;
 }
+.projects .project-block .project:nth-child(2) {
+  padding: 4rem 0;
+  border-top: 1px black solid;
+  border-bottom: 1px black solid;
+}
 .projects .project-block .project h3 {
   margin: 10px 0;
   font-size: 2.4rem;
@@ -6191,6 +6196,12 @@ footer p {
   text-align: center;
   font-size: 1.2rem;
   margin-bottom: 20px;
+}
+footer .footer-icons {
+  font-size: 5rem;
+}
+footer .footer-icons li {
+  margin: 1.7rem;
 }
 
 /*# sourceMappingURL=index.css.map */
