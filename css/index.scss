@@ -149,8 +149,7 @@ html {
 
 /* header {
 } */
-.header-container,
-footer {
+.header-container {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -189,6 +188,25 @@ footer {
     }
     @media (max-width: $mobile) {
       margin: 25px auto;
+    }
+  }
+  nav {
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px auto;
+    color: #d2d2d2;
+    font-size: 2.2rem;
+    @media (max-width: $tablet) {
+      width: 90%;
+    }
+    @media (max-width: $mobile) {
+      width: 95%;
+      font-size: 1.6rem;
+    }
+    a {
+      text-decoration: none;
+      color: #d2d2d2;
     }
   }
 }
@@ -320,11 +338,11 @@ footer {
             &:link {
               color: $lavender;
             }
-            &:visited{
-                color: $sage;
+            &:visited {
+              color: $sage;
             }
-            &:hover{
-                color: #787878;
+            &:hover {
+              color: #787878;
             }
           }
         }
@@ -344,6 +362,10 @@ footer {
 }
 
 footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: $lavender;
   ul {
     max-width: 400px;
     display: flex;
