@@ -151,15 +151,21 @@ html {
 } */
 .header-container,
 footer {
+    width: 100%;
   display: flex;
   flex-direction: column;
   background-color: $lavender;
   img {
-    height: 400px;
-    width: auto;
-    @media (max-width: $mobile) {
-      height: 200px;
+    width: 100%;
+    height: auto;
+    @media (max-width: $tablet) {
+      height: 300px;
       width: auto;
+      object-fit: cover;
+    }
+    @media (max-width: $mobile){
+        height: 250px;
+        object-position: -120px 0;
     }
   }
 }
@@ -192,6 +198,9 @@ footer {
   p {
     width: 80%;
     margin: 0 auto;
+    @media (max-width: $tablet){
+        width: 95%;
+    }
   }
 
   img {
