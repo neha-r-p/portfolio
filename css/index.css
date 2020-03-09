@@ -6046,24 +6046,50 @@ footer img {
     object-fit: cover;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 550px) {
   .header-container img,
 footer img {
     height: 250px;
     object-position: -120px 0;
   }
 }
-
-.header-text {
+.header-container .header-text,
+footer .header-text {
   margin: 40px auto;
   color: white;
   text-align: center;
 }
-.header-text h1 {
+.header-container .header-text h1,
+footer .header-text h1 {
   font-size: 6rem;
 }
-.header-text h3 {
+@media (max-width: 550px) {
+  .header-container .header-text h1,
+footer .header-text h1 {
+    font-size: 4rem;
+  }
+}
+.header-container .header-text h3,
+footer .header-text h3 {
   font-size: 2rem;
+}
+@media (max-width: 550px) {
+  .header-container .header-text h3,
+footer .header-text h3 {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 800px) {
+  .header-container .header-text,
+footer .header-text {
+    margin: 30px auto;
+  }
+}
+@media (max-width: 550px) {
+  .header-container .header-text,
+footer .header-text {
+    margin: 25px auto;
+  }
 }
 
 .about-me {
@@ -6101,6 +6127,11 @@ footer img {
     margin: 20px 0;
   }
 }
+@media (max-width: 550px) {
+  .about-me img {
+    max-width: 250px;
+  }
+}
 
 .skillset {
   padding: 20px 0;
@@ -6123,7 +6154,7 @@ footer img {
 .skillset .tech-icons i {
   margin: 0 1rem;
 }
-@media (max-width: 600px) {
+@media (max-width: 550px) {
   .skillset .tech-icons {
     display: none;
   }
@@ -6139,7 +6170,7 @@ footer img {
   list-style-type: circle;
   list-style-position: inside;
 }
-@media (max-width: 600px) {
+@media (max-width: 550px) {
   .skillset .skill-list {
     width: 90%;
     margin: 0 auto;
@@ -6177,6 +6208,12 @@ footer img {
   max-width: 49%;
   height: auto;
 }
+@media (max-width: 800px) {
+  .projects .project-block .project img {
+    max-width: 90%;
+    margin-top: 2rem;
+  }
+}
 .projects .project-block .project .project-description {
   width: 90%;
   display: flex;
@@ -6184,7 +6221,7 @@ footer img {
   align-items: center;
 }
 .projects .project-block .project .project-description p {
-  width: 85%;
+  width: 90%;
   margin: 2rem;
 }
 @media (max-width: 800px) {
