@@ -151,7 +151,7 @@ html {
 } */
 .header-container,
 footer {
-    width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   background-color: $lavender;
@@ -163,21 +163,33 @@ footer {
       width: auto;
       object-fit: cover;
     }
-    @media (max-width: $mobile){
-        height: 250px;
-        object-position: -120px 0;
+    @media (max-width: $mobile) {
+      height: 250px;
+      object-position: -120px 0;
     }
   }
-}
-.header-text {
-  margin: 40px auto;
-  color: white;
-  text-align: center;
-  h1 {
-    font-size: 6rem;
-  }
-  h3 {
-    font-size: 2rem;
+  .header-text {
+    margin: 40px auto;
+    color: white;
+    text-align: center;
+    h1 {
+      font-size: 6rem;
+      @media (max-width: $mobile) {
+        font-size: 4rem;
+      }
+    }
+    h3 {
+      font-size: 2rem;
+      @media (max-width: $mobile) {
+        font-size: 1.6rem;
+      }
+    }
+    @media (max-width: $tablet) {
+      margin: 30px auto;
+    }
+    @media (max-width: $mobile) {
+      margin: 25px auto;
+    }
   }
 }
 
@@ -198,8 +210,8 @@ footer {
   p {
     width: 80%;
     margin: 0 auto;
-    @media (max-width: $tablet){
-        width: 95%;
+    @media (max-width: $tablet) {
+      width: 95%;
     }
   }
 
@@ -211,6 +223,9 @@ footer {
     @media (max-width: $tablet) {
       max-width: 300px;
       margin: 20px 0;
+    }
+    @media (max-width: $mobile) {
+      max-width: 250px;
     }
   }
 }
@@ -288,6 +303,10 @@ footer {
       img {
         max-width: 49%;
         height: auto;
+        @media (max-width: $tablet) {
+          max-width: 90%;
+          margin-top: 2rem;
+        }
       }
       .project-description {
         width: 90%;
@@ -296,7 +315,7 @@ footer {
         align-items: center;
 
         p {
-          width: 85%;
+          width: 90%;
           margin: 2rem;
         }
       }
@@ -328,10 +347,10 @@ footer {
     font-size: 1.2rem;
     margin-bottom: 20px;
   }
-  .footer-icons{
-      font-size: 5rem;
-      li {
-          margin:1.7rem;
-      }
+  .footer-icons {
+    font-size: 5rem;
+    li {
+      margin: 1.7rem;
+    }
   }
 }
