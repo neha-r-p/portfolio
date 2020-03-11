@@ -6063,6 +6063,9 @@ html h2 {
     font-size: 4rem;
   }
 }
+.header-container .header-text h1 span {
+  display: inline-block;
+}
 .header-container .header-text h3 {
   font-size: 2rem;
 }

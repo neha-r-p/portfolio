@@ -177,6 +177,9 @@ html {
       @media (max-width: $mobile) {
         font-size: 4rem;
       }
+      span {
+          display: inline-block;
+      }
     }
     h3 {
       font-size: 2rem;
