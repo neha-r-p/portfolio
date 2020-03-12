@@ -261,13 +261,13 @@ html {
   justify-content: flex-start;
 
   .tech-icons {
-    width: 60%;
+    width: 70%;
     font-size: 7rem;
     margin: 2rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     i {
       margin: 0 1rem;
@@ -336,6 +336,7 @@ html {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
 
         .project-links {
           a {

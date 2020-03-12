@@ -6158,13 +6158,13 @@ html h2 {
   justify-content: flex-start;
 }
 .skillset .tech-icons {
-  width: 60%;
+  width: 70%;
   font-size: 7rem;
   margin: 2rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 .skillset .tech-icons i {
@@ -6236,6 +6236,7 @@ html h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .projects .project-block .project .project-description .project-links a {
   text-decoration: none;
